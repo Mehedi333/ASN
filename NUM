@@ -1,0 +1,51 @@
+using System;
+
+namespace MidAssignment1
+{
+    class Address
+    {
+        private string roadNo;
+        private string houseNo;
+        private string city;
+        private string country;
+
+        public string RoadNo
+        {
+            get { return roadNo; }
+            set { roadNo = value; }
+        }
+
+        public string HouseNo
+        {
+            get { return houseNo; }
+            set { houseNo = value; }
+        }
+
+        public string City
+        {
+            get { return city; }
+            set { city = value; }
+        }
+
+        public string Country
+        {
+            get { return country; }
+            set { country = value; }
+        }
+
+        public Address(string road, string house, string ct, string cntry)
+        {
+            RoadNo = road;
+            HouseNo = house;
+            City = ct;
+            Country = cntry;
+        }
+        public void GetAddress()
+        {
+            Console.WriteLine("Road No:" + Convert.ToInt32(RoadNo));
+            Console.WriteLine("House No:" + Convert.ToInt32(HouseNo));
+            Console.WriteLine("City:" + City);
+            Console.WriteLine("Country:" + Country);
+        }
+
+    }
